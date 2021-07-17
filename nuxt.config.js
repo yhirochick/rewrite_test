@@ -39,5 +39,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  generate: {
+    routes: ['/user/1', '/user/2', '/user/3']
   }
 }
