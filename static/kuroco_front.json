@@ -1,0 +1,8 @@
+{
+  "basic": [],
+  "error_page": {
+    "status404": "/404/index.html",
+    "status403": "/404/index.html"
+  },
+  "redirects": []
+}
