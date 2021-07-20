@@ -30,7 +30,7 @@
 <script>
 export default {
   asyncData ({route}) {
-    if(['1','2','3'].indexOf(route.params.id) >= 0) {
+    if(['1','2','3','999'].indexOf(route.params.id) >= 0) {
       return {
         user: {
           name: "Nakasone"
