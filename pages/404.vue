@@ -71,3 +71,4 @@ export default {}
   padding-top: 15px;
 }
 </style>
+
