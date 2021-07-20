@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Hi, User{{$route.params.id}}.
+        Hi, {{user.name}}({{$route.params.id}}).
       </h1>
       <div class="links">
         <a
@@ -29,9 +29,17 @@
 
 <script>
 export default {
-  mounted(){
-    window.alert("Hi, User" + this.$route.params.id + ".")
-  }
+  asyncData ({route}) {
+    if(['1','2','3'].indexOf(route.params.id) >= 0) {
+      return {
+        user: {
+          name: "Nakasone"
+        }
+      }
+    }else {
+      return {}
+    }
+  },
 }
 </script>
 

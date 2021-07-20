@@ -41,6 +41,7 @@ export default {
   build: {
   },
   generate: {
+    // 本来であれば以下のルートはAPIで取得した配列を元に作成する
     routes: ['/user/1', '/user/2', '/user/3']
   }
 }
