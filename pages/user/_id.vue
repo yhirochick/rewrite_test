@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        Hi, {{user.name}}({{$route.params.id}}).
+        Hi, {{[1,2,3,999].indexOf(parseInt($route.params.id, 10)) >= 0 ? 'Nakasone' : UndefinedValue.name}}({{$route.params.id}}).
       </h1>
       <div class="links">
         <a
@@ -28,19 +28,7 @@
 </template>
 
 <script>
-export default {
-  asyncData ({route}) {
-    if([1,2,3,999].indexOf(parseInt(route.params.id, 10)) >= 0) {
-      return {
-        user: {
-          name: "Nakasone"
-        }
-      }
-    }else {
-      return {}
-    }
-  },
-}
+export default { }
 </script>
 
 <style>
